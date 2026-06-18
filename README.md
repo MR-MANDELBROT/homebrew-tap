@@ -5,15 +5,12 @@ Homebrew tap for [DockIntercept](https://github.com/MR-MANDELBROT/DockIntercept)
 ## Install
 
 ```bash
-brew install --cask MR-MANDELBROT/tap/dockintercept
+brew tap MR-MANDELBROT/tap && brew trust MR-MANDELBROT/tap && brew install --cask dockintercept
 ```
 
-That's the one-liner — it taps this repo and installs in one step. Equivalent to:
-
-```bash
-brew tap MR-MANDELBROT/tap
-brew install --cask dockintercept
-```
+Homebrew 6.0+ requires third-party taps to be explicitly trusted once (a security
+feature, since June 2026), hence the `brew trust` step. After that, installs and
+upgrades work normally.
 
 ## Update / Uninstall
 
