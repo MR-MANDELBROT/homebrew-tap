@@ -8,7 +8,7 @@ cask "dockintercept" do
   desc "Extended right-click context menu for files and folders in the macOS Dock"
   homepage "https://github.com/MR-MANDELBROT/DockIntercept"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "DockIntercept.app"
 
